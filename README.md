@@ -57,5 +57,8 @@ At least one potential developer on the project works mainly with C# and Windows
 * We should offer the ability to browse available scripts/plugins.  This might not happen until after version 1.0, but it's something no other IRC client offers.
 * As for themes, the built in theme should attempt to mimic the theme provided by the OS.  Should the user want to override that, it'd be nice to let the user browse choices there.  Of particular note: We need to support both dark and light themes.
 
+# Should non-IRC protocols be supported?
+Initially, the project would be for IRC only.  But it may have IRC support actually implement as a library system.  If another library were to appear later supporting Matrix, Discord, Jabber, or something else, maybe we should support that.  It's unknown how we'd implement the UI.  Both Pidgin and SMUXI can do this, but Pidgin's libpurple reportedly has some major security holes.  If there's any other problem with Pidgin, it ends up looking more like a client for just Twitter and Messenger rather than IRC.
+
 # Note: Our name is only a placeholder
 As such, once we have a better name, expect our GitHub URL to change.  In the meantime, we're on IRC at [irc.libera.chat/chatzilla-replacement-project](irc://irc.libera.chat/chatzilla-replacement-project) or [ircs.libera.chat/chatzilla-replacement-project (SSL)](irc://ircs.libera.chat/chatzilla-replacement-project) , but that could change too.
