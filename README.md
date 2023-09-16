@@ -11,7 +11,7 @@ ChatZilla, aka cZ, was one of the best IRC clients ever.  Unfortunately, it had 
 * cZ would interpret some format codes for bold, underline, and italics and switch fonts.  So if you wrote `/i/`, it would put an 'i' in italics.  It also supported some MIRC codes for formatting.  We should support all the above.
 
 # What we like in other clients
-While cZ is our favorite existing client, there are a few features in other clents we'd like to offer in our product.  First and foremost, most of those clients have built in support for SASL and Bouncer logins.  cZ does have SASL script, but nothing for logging into your bouncer.  Also, many other clients attempt to maintain a marker line as to what they think you've read and haven't read for each channel.  Many of these clients also have buttons for toggling common channel modes and will commonly display a tooltip for what those modes mean.  That helps non-expert IRC users.
+While cZ is our favorite existing client, there are a few features in other clents we'd like to offer in our product.  First and foremost, most of those clients have built in support for SASL and Bouncer logins.  cZ does have SASL script, but nothing for logging into your bouncer.  Also, many other clients attempt to maintain a marker line as to what they think you've read and haven't read for each channel.  Many of these clients also have buttons for toggling common channel modes and will commonly display a tooltip for what those modes mean.  That helps non-expert IRC users.  Several of these clients also can reload your log from previous sessions.
 
 ## From HexChat, Y-Chat,, and other X-Chat forks
 * X-Chat on Windows could let users change formatting by reclicking on selected text or with a special formatting toolbar.
