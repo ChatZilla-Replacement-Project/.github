@@ -8,9 +8,10 @@ ChatZilla, aka cZ, was one of the best IRC clients ever.  Unfortunately, it had 
 * The topic bar could expand as needed.
 * The input box had two sizes.  In the small size, it would treat the user pressing Return/Enter as a signal to send.  However, in the larger size, the Return/Enter key would put a newline into the text.  In either case, the newline would be sent in the text.  Other clients split the text into multiple texts at each newline.
 * The entire UI could be styled with CSS.  No other client provides anything like that.  They might let you change the colors, but cZ could be told to add icons to each tab to mark the status.
+* cZ would interpret some format codes for bold, underline, and italics and switch fonts.  So if you wrote `/i/`, it would put an 'i' in italics.  It also supported some MIRC codes for formatting.  We should support all the above.
 
 # What we like in other clients
-While cZ is our favorite existing client, there are a few features in other clents we'd like to offer in our product.  First and foremost, most of those clients have built in support for SASL and Bouncer logins.  cZ does have SASL script, but nothing for logging into your bouncer.
+While cZ is our favorite existing client, there are a few features in other clents we'd like to offer in our product.  First and foremost, most of those clients have built in support for SASL and Bouncer logins.  cZ does have SASL script, but nothing for logging into your bouncer.  Also, many other clients attempt to maintain a marker line as to what they think you've read and haven't read for each channel.  Many of these clients also have buttons for toggling common channel modes and will commonly display a tooltip for what those modes mean.  That helps non-expert IRC users.
 
 ## From HexChat, Y-Chat,, and other X-Chat forks
 * X-Chat on Windows could let users change formatting by reclicking on selected text or with a special formatting toolbar.
@@ -23,6 +24,15 @@ While cZ is our favorite existing client, there are a few features in other clen
 
 ## From Quassel and SMUXI
 * These clients can connect to a remote routing server.  This is kind of like a private bouncer built right in.  You could have your client computers X and Y.  But they both connect to "server" routing to the real IRC server.
+
+## From non-IRC clients
+IRC clients aren't limited to the best ideas.
+
+### Element (Matrix) and Discord users can paste long blocks of text and/or images into the input box
+This works by having the server then stores a copy online.  Since we don't have that ability with a server, we can't simply allow that.  But it's handy.  So we'd rely on something like [Paste.pics](https://paste.pics/) and [PasteBin.com](https://pastebin.com).  Both might have to be written as plugins so if their API changes, we can simply issue a new version of the plugin.  Plus, users could choose which site to use.
+
+### Element (Matrix) can a really good marker line
+While Discord also has a decent marker line, Element's version is better.  The user can switch between the first post they missed and the most recent as often as they want.  When the user first arrives back at their computer, Element is waiting at the first missed post.  You press Escape to clear the marker.  Discord waits at the most recent post.
 
 # The vision
 The intention is to end up with a user interface, or UI, largely based on that of cZ.  Internally, we like the idea of maintaining some of the logic in the existing cZ application.  However, the code in there is ancient.  Not only is it relying on the old XUL technology, but it predates the newer JavaScript lannguage features like classes.
@@ -39,6 +49,10 @@ cZ did have the ability to run without a browser with help from XulRunner, but t
 That leaves abandoning the browser entirely.  Since cZ could run that way, we aren't losing anything.  Instead, we might gain users who wouldn't use our choice of browser.
 
 At least one potential developer on the project works mainly with C# and Windows Presentation Framework.  WPF and .NET do run outside Windows with help from [Wine](https://www.winehq.org/) and [Mono](https://www.winehq.org/), but we'd need to limit ourselves to slightly older versions of .NET and C#.  Java is an option as that developer does work with it and Swing.  But many others represent a learning curve.  Options include C#/GTK#, C#/QtSharp, C++/GTK, C++/Qt, C++/Wx, and more.
+
+# Dream wishlist items
+* We should offer the ability to browse available scripts/plugins.  This might not happen until after version 1.0, but it's something no other IRC client offers.
+* As for themes, the built in theme should attempt to mimic the theme provided by the OS.  Should the user want to override that, it'd be nice to let the user browse choices there.  Of particular note: We need to support both dark and light themes.
 
 # Note: Our name is only a placeholder.  As such, once we have a better name, expect our GitHub URL to change.
 In the meantime, we're on IRC at [irc.libera.chat/chatzilla-replacement-project](irc://irc.libera.chat/chatzilla-replacement-project) or [ircs.libera.chat/chatzilla-replacement-project (SSL)](irc://ircs.libera.chat/chatzilla-replacement-project).
