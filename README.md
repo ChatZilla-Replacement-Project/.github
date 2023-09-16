@@ -45,6 +45,9 @@ This happens if a post consists only of emoji characters.  If so, the client cho
 ### Both Element (Matrix) and Discord can show previews of links
 It's unknown how Discord does it, but Matrix servers store the preview on the server.  The client never accesses the site improving security.  While many IRC users wouldn't like that, some would.  So we should add an option to at least show ***a*** preview even if we have to access the site from the client.  This might be something added later.
 
+### Matrix clients and Discord both let you link a new post to an existing post
+Would IRC users like to be able to include a short quote?  This could be both with an without a ping to the original poster.
+
 # The vision
 The intention is to end up with a user interface, or UI, largely based on that of cZ.  Internally, we like the idea of maintaining some of the logic in the existing cZ application.  However, the code in there is ancient.  Not only is it relying on the old XUL technology, but it predates the newer JavaScript lannguage features like classes.
 
