@@ -34,6 +34,9 @@ This works by having the server then stores a copy online.  Since we don't have 
 ### Element (Matrix) can a really good marker line
 While Discord also has a decent marker line, Element's version is better.  The user can switch between the first post they missed and the most recent as often as they want.  When the user first arrives back at their computer, Element is waiting at the first missed post.  You press Escape to clear the marker.  Discord waits at the most recent post.
 
+### Both Element (Matrix) and Discord can show emoji as large characters
+This happens if a post consists only of emoji characters.  If so, the client chooses a larger version of the same font.
+
 # The vision
 The intention is to end up with a user interface, or UI, largely based on that of cZ.  Internally, we like the idea of maintaining some of the logic in the existing cZ application.  However, the code in there is ancient.  Not only is it relying on the old XUL technology, but it predates the newer JavaScript lannguage features like classes.
 
