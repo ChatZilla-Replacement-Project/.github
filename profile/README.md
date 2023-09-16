@@ -64,6 +64,9 @@ That leaves abandoning the browser entirely.  Since cZ could run that way, we ar
 
 At least one potential developer on the project works mainly with C# and Windows Presentation Framework.  WPF and .NET do run outside Windows with help from [Wine](https://www.winehq.org/) and [Mono](https://www.winehq.org/), but we'd need to limit ourselves to slightly older versions of .NET and C#.  Java is an option as that developer does work with it and Swing.  But many others represent a learning curve.  Options include C#/GTK#, C#/QtSharp, C++/GTK, C++/Qt, C++/Wx, and more.
 
+# Password storage
+We need to keep passwords secure.  So we need to store them encrypted using something like Windows Hello or the various Linux keyrings.
+
 # Dream wishlist items
 * We should offer the ability to browse available scripts/plugins.  This might not happen until after version 1.0, but it's something no other IRC client offers.
 * As for themes, the built in theme should attempt to mimic the theme provided by the OS.  Should the user want to override that, it'd be nice to let the user browse choices there.  Of particular note: We need to support both dark and light themes.
