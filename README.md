@@ -4,14 +4,19 @@ ChatZilla, aka cZ, was one of the best IRC clients ever.  Unfortunately, it had 
 ## What made cZ better than other IRC clients?
 * It could shorten irc:// urls by replacing the full host name (the irc.libera.chat part) with just a name for the network.  So instead of `irc://irc.libera.chat/chatzilla`, you'd get `irc://libera/chatzilla`.
 * It could replace known emoticons with graphical emoji on incomming messages.  So `:)` would be rendered as this: ![:)](http://chatzilla.hacksrus.com/common/image/face-smile.png)
-* Tabs could be renamed by the user or a script.
+* Tabs could be renamed by the user or a script.  Something like `cZ Replacement` takes up less space than the channel identifier for our official channel: `#chatzilla-replacement-project`.
 * The topic bar could expand as needed.
 * The input box had two sizes.  In the small size, it would treat the user pressing Return/Enter as a signal to send.  However, in the larger size, the Return/Enter key would put a newline into the text.  In either case, the newline would be sent in the text.  Other clients split the text into multiple texts at each newline.
 * The entire UI could be styled with CSS.  No other client provides anything like that.  They might let you change the colors, but cZ could be told to add icons to each tab to mark the status.
 * cZ would interpret some format codes for bold, underline, and italics and switch fonts.  So if you wrote `/i/`, it would put an 'i' in italics.  It also supported some MIRC codes for formatting.  We should support all the above.
 
 # What we like in other clients
-While cZ is our favorite existing client, there are a few features in other clents we'd like to offer in our product.  First and foremost, most of those clients have built in support for SASL and Bouncer logins.  cZ does have SASL script, but nothing for logging into your bouncer.  Also, many other clients attempt to maintain a marker line as to what they think you've read and haven't read for each channel.  Many of these clients also have buttons for toggling common channel modes and will commonly display a tooltip for what those modes mean.  That helps non-expert IRC users.  Several of these clients also can reload your log from previous sessions.
+While cZ is our favorite existing client, there are a few features in other clents we'd like to offer in our product.
+1. First and foremost, most of those clients have built in support for SASL and Bouncer logins.  cZ does have SASL script, but nothing for logging into your bouncer.
+2. Many other clients attempt to maintain a marker line as to what they think you've read and haven't read for each channel.
+3. Many clients also have buttons for toggling common channel modes and will commonly display a tooltip for what those modes mean.  That helps non-expert IRC users.
+4. Several of these clients also can reload your log from previous sessions.
+5. Many of these clients also let you configure custom actions for the user list.  These commonly appear anywhere you can right-click a user name, including the chat.  Most also let you put these actions into buttons that are typically shown near the bottom of the user list.
 
 ## From HexChat, Y-Chat,, and other X-Chat forks
 * X-Chat on Windows could let users change formatting by reclicking on selected text or with a special formatting toolbar.
@@ -37,6 +42,9 @@ While Discord also has a decent marker line, Element's version is better.  The u
 ### Both Element (Matrix) and Discord can show emoji as large characters
 This happens if a post consists only of emoji characters.  If so, the client chooses a larger version of the same font.
 
+### Both Element (Matrix) and Discord can show previews of links
+It's unknown how Discord does it, but Matrix servers store the preview on the server.  The client never accesses the site improving security.  While many IRC users wouldn't like that, some would.  So we should add an option to at least show ***a*** preview even if we have to access the site from the client.  This might be something added later.
+
 # The vision
 The intention is to end up with a user interface, or UI, largely based on that of cZ.  Internally, we like the idea of maintaining some of the logic in the existing cZ application.  However, the code in there is ancient.  Not only is it relying on the old XUL technology, but it predates the newer JavaScript lannguage features like classes.
 
@@ -59,6 +67,9 @@ At least one potential developer on the project works mainly with C# and Windows
 
 # Should non-IRC protocols be supported?
 Initially, the project would be for IRC only.  But it may have IRC support actually implement as a library system.  If another library were to appear later supporting Matrix, Discord, Jabber, or something else, maybe we should support that.  It's unknown how we'd implement the UI.  Both Pidgin and SMUXI can do this, but Pidgin's libpurple reportedly has some major security holes.  If there's any other problem with Pidgin, it ends up looking more like a client for just Twitter and Messenger rather than IRC.
+
+# Should we include a text interface option?
+Some clients for Linux are strictly text based and can run even without a graphical user interface or GUI.  This is limited but some users like it.  If we did this, the commications portion of the product would be a seperate executable that might be an installation option.  Users could then choose to install just one interface or both.  The text interface, sometimes called a TUI, would prevent support of many non-IRC protocols.
 
 # Note: Our name is only a placeholder
 As such, once we have a better name, expect our GitHub URL to change.  In the meantime, we're on IRC at [irc.libera.chat/chatzilla-replacement-project](irc://irc.libera.chat/chatzilla-replacement-project) or [ircs.libera.chat/chatzilla-replacement-project (SSL)](irc://ircs.libera.chat/chatzilla-replacement-project) , but that could change too.
