@@ -80,6 +80,16 @@ Regardless of mode, we should always show kicks, ban changes, quiet changes, and
 # Tiny URLs
 We should have the ability to expand tinyurls from the short link to the full URL which would be shown in a tooltip in the GUI version.  [If we do a TUI](https://github.com/ChatZilla-Replacement-Project#should-we-include-a-text-interface-option), it might show the full URL in parentheses.  We should also offer in preferences the ability to turn long URLs into the short URL of the user's choice.  This might default to tinyurl.com, but there might be better choices.  See also [Both Element (Matrix) and Discord can show previews of links](https://github.com/ChatZilla-Replacement-Project#both-element-matrix-and-discord-can-show-previews-of-links).
 
+# Integration with the user's desktop
+We should attempt to integrate with the desktops for Windows, Gnome, and KDE Plasma along with their forks.
+* With Windows, that may mean:
+  * offering a system tray icon
+  * Taskbar integration to show previews of the various channels and tabs and possibly common tasks.
+  * Start menu tiles and common actions
+  * Action center notifications if the user wants them
+* With Gnome, that means a menu looking like MacOS
+* With KDE Plasma, we may offer widgets
+
 # Dream wishlist items
 * We should offer the ability to browse available scripts/plugins.  This might not happen until after version 1.0, but it's something no other IRC client offers.
 * As for themes, the built in theme should attempt to mimic the theme provided by the OS.  Should the user want to override that, it'd be nice to let the user browse choices there.  Of particular note: We need to support both dark and light themes.
