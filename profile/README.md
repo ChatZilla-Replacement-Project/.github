@@ -67,6 +67,14 @@ At least one potential developer on the project works mainly with C# and Windows
 # Password storage
 We need to keep passwords secure.  So we need to store them encrypted using something like Windows Hello or the various Linux keyrings.  The typical IRC client stores them unecrypted in a text file of some form.
 
+# Hiding or showing parts, joins, and nick changes
+In some channels, there can be a lot of server messages about parts, joins, and nick changes drowning out new posts.  There are two main existing strategies with a third that attempts to combine the two.
+1. Show all parts, joins, and nick changes
+2. Hide all parts, joins, and nick changes
+3. Switch between the first two depending on how many people are in a channel
+
+However, there might be another option.  Suppose we show those events, but if there are a lot of people present, we hide the events after a few seconds.  We then group all such events between posts and hide them in an expandable block.  We then let users choose between the various strategies.  We also let them configure the automatic ones.
+
 # Dream wishlist items
 * We should offer the ability to browse available scripts/plugins.  This might not happen until after version 1.0, but it's something no other IRC client offers.
 * As for themes, the built in theme should attempt to mimic the theme provided by the OS.  Should the user want to override that, it'd be nice to let the user browse choices there.  Of particular note: We need to support both dark and light themes.
