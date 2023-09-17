@@ -2,7 +2,7 @@
 ChatZilla, aka cZ, was one of the best IRC clients ever.  Unfortunately, it had problems.  The biggest of which is how it was based on Mozilla's older XUL technology which is no longer supported.
 
 ## What made cZ better than other IRC clients?
-* It could shorten irc:// urls by replacing the full host name (the irc.libera.chat part) with just a name for the network.  So instead of `irc://irc.libera.chat/chatzilla`, you'd get `irc://libera/chatzilla`.
+* It could shorten irc:// urls by replacing the full host name (the irc.libera.chat part) with just a name for the network.  So instead of `irc://irc.libera.chat/chatzilla`, you'd see and enter `irc://libera/chatzilla`.  cZ would expand the URL on the fly before trying to contact the server.
 * It could replace known emoticons with graphical emoji on incomming messages.  So `:)` would be rendered as this: ![:)](http://chatzilla.hacksrus.com/common/image/face-smile.png)
 * Tabs could be renamed by the user or a script.  Something like `cZ Replacement` takes up less space than the channel identifier for our official channel: `#chatzilla-replacement-project`.
 * The topic bar could expand as needed.
