@@ -9,6 +9,7 @@ ChatZilla, aka cZ, was one of the best IRC clients ever.  Unfortunately, it had 
 * The input box had two sizes.  In the small size, it would treat the user pressing Return/Enter as a signal to send.  However, in the larger size, the Return/Enter key would put a newline into the text.  In either case, the newline would be sent in the text.  Other clients split the text into multiple texts at each newline.
 * The entire UI could be styled with CSS.  No other client provides anything like that.  They might let you change the colors, but cZ could be told to add icons to each tab to mark the status.
 * cZ would interpret some format codes for bold, underline, and italics and switch fonts.  So if you wrote `/i/`, it would put an 'i' in italics.  It also supported some MIRC codes for formatting.  We should support all the above.
+* cZ let users rearrange tabs as desired.  Other clients forced all tabs to be sorted, but some group them by network.  That is better in some regards, but we like grouping channels as desired, such as topic.
 
 # What we like in other clients
 While cZ is our favorite existing client, there are a few features in other clents we'd like to offer in our product.
@@ -94,6 +95,12 @@ We should attempt to integrate with the desktops for Windows, Gnome, and KDE Pla
 We should allow users to ignore users—and then choose to ***not*** ignore them in channels where one of them is opped.  So if you're responsible for channel #x, you can choose to ignore select users everywhere except in #x.
 
 On a similar note, maybe users would like to stalk select words on a channel by channel basis.
+
+# Per channel features we want
+* Ability to ignore users everywhere—except on channels we are ops
+* Stalk words on only select channels
+* Ability to notify the user on any event, including new messages
+* Pin tabs?
 
 # Dream wishlist items
 * We should offer the ability to browse available scripts/plugins.  This might not happen until after version 1.0, but it's something no other IRC client offers.
