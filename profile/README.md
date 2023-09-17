@@ -7,7 +7,7 @@ ChatZilla, aka cZ, was one of the best IRC clients ever.  Unfortunately, it had 
 * Tabs could be renamed by the user or a script.  Something like `cZ Replacement` takes up less space than the channel identifier for our official channel: `#chatzilla-replacement-project`.
 * The topic bar could expand as needed.
 * The input box had two sizes.  In the small size, it would treat the user pressing Return/Enter as a signal to send.  However, in the larger size, the Return/Enter key would put a newline into the text.  In either case, the newline would be sent in the text.  Other clients split the text into multiple texts at each newline.
-* The entire UI could be styled with CSS.  No other client provides anything like that.  They might let you change the colors, but cZ could be told to add icons to each tab to mark the status.
+* The entire UI could be styled with CSS.  No other client provides anything like that.  They might let you change the colors, but cZ could be told to add icons to each tab to mark the status.  While our application might not be browser based, we'd like to offer something similar even if CSS can't be used.
 * cZ would interpret some format codes for bold, underline, and italics and switch fonts.  So if you wrote `/i/`, it would put an 'i' in italics.  It also supported some MIRC codes for formatting.  We should support all the above.
 * cZ let users rearrange tabs as desired.  Other clients forced all tabs to be sorted, but some group them by network.  That is better in some regards, but we like grouping channels as desired, such as topic.
 * Because cZ was built on the Mozilla suite codebase, it came with free touchscreen support.  Few other legacy clients include this support.
