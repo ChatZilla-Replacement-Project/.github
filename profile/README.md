@@ -90,6 +90,11 @@ We should attempt to integrate with the desktops for Windows, Gnome, and KDE Pla
 * With Gnome, that means a menu looking like MacOS
 * With KDE Plasma, we may offer widgets
 
+# Helping ops be aware of channel activities while ignoring users in other channels where they aren't ops
+We should allow users to ignore users—and then choose to ***not*** ignore them in channels where one of them is opped.  So if you're responsible for channel #x, you can choose to ignore select users everywhere except in #x.
+
+On a similar note, maybe users would like to stalk select words on a channel by channel basis.
+
 # Dream wishlist items
 * We should offer the ability to browse available scripts/plugins.  This might not happen until after version 1.0, but it's something no other IRC client offers.
 * As for themes, the built in theme should attempt to mimic the theme provided by the OS.  Should the user want to override that, it'd be nice to let the user browse choices there.  Of particular note: We need to support both dark and light themes.
