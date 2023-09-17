@@ -122,6 +122,10 @@ As the organization grows, we'll need to assign owners to those who are the main
 * The scripting modules
 * The browsers for themes and scripts/plugins
 * Other protocol modules
+* Providers for:
+  * Tiny URLs
+  * Paste Bins
+  * Image hosts
 
 # Note: Our name is only a placeholder
 As such, once we have a better name, expect our GitHub URL to change.  In the meantime, we're on Libera IRC at [#chatzilla-replacement-project](irc://irc.libera.chat/chatzilla-replacement-project) or [#chatzilla-replacement-project (SSL)](ircs://irc.libera.chat/chatzilla-replacement-project) , but that could change too.
