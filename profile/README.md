@@ -78,7 +78,7 @@ However, there might be another option.  Suppose we show those events, but if th
 Regardless of mode, we should always show kicks, ban changes, quiet changes, and channel mode changes.
 
 # Tiny URLs
-We should have the ability to expand tinyurls from the short link to the full URL which would be shown in a tooltip in the GUI version.  [If we do a TUI](https://github.com/ChatZilla-Replacement-Project#should-we-include-a-text-interface-option), it might show the full URL in parentheses.  We should also offer in preferences the ability to turn long URLs into the short URL of the user's choice.  This might default to tinyurl.com, but there might be better choices.  See also [Both Element (Matrix) and Discord can show previews of links](https://github.com/ChatZilla-Replacement-Project#both-element-matrix-and-discord-can-show-previews-of-links)
+We should have the ability to expand tinyurls from the short link to the full URL which would be shown in a tooltip in the GUI version.  [If we do a TUI](https://github.com/ChatZilla-Replacement-Project#should-we-include-a-text-interface-option), it might show the full URL in parentheses.  We should also offer in preferences the ability to turn long URLs into the short URL of the user's choice.  This might default to tinyurl.com, but there might be better choices.  See also [Both Element (Matrix) and Discord can show previews of links](https://github.com/ChatZilla-Replacement-Project#both-element-matrix-and-discord-can-show-previews-of-links).
 
 # Dream wishlist items
 * We should offer the ability to browse available scripts/plugins.  This might not happen until after version 1.0, but it's something no other IRC client offers.
