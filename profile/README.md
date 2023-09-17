@@ -113,5 +113,13 @@ Initially, the project would be for IRC only.  But it may have IRC support actua
 # Should we include a text interface option?
 Some clients for Linux are strictly text based and can run even without a graphical user interface or GUI.  This is limited but some users like it.  If we did this, the commications portion of the product would be a seperate executable that might be an installation option.  Users could then choose to install just one interface or both.  The text interface, sometimes called a TUI, would prevent support of many non-IRC protocols.
 
+# Module Owners
+As the organization grows, we'll need to assign owners to those who are the main contacts for each module in the application.  These owners might be the primary coders for the module.  Examples:
+* The main app
+* The IRC communications module
+* The scripting modules
+* The browsers for themes and scripts/plugins
+* Other protocol modules
+
 # Note: Our name is only a placeholder
 As such, once we have a better name, expect our GitHub URL to change.  In the meantime, we're on Libera IRC at [#chatzilla-replacement-project](irc://irc.libera.chat/chatzilla-replacement-project) or [#chatzilla-replacement-project (SSL)](ircs://irc.libera.chat/chatzilla-replacement-project) , but that could change too.
