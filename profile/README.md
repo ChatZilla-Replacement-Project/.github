@@ -115,7 +115,9 @@ Some clients for Linux are strictly text based and can run even without a graphi
 
 # Module Owners
 As the organization grows, we'll need to assign owners to those who are the main contacts for each module in the application.  These owners might be the primary coders for the module.  Examples:
-* The main app
+* The main GUI app
+* The TUI app (if implemented)
+* Support for each OS would need its own owner
 * The IRC communications module
 * The scripting modules
 * The browsers for themes and scripts/plugins
