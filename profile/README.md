@@ -127,5 +127,14 @@ As the organization grows, we'll need to assign owners to those who are the main
   * Paste Bins
   * Image hosts
 
+# Touchscreen Support
+It's considered important we support touchscreens even on desktop platforms.  To that end, we'll either create specialized themes or have a touchscreen mode.  When selected, controls will be larger.  When deselected, controls are smaller allowing for denser content.
+
+# Phone/Tablet support?
+Eventually, we should grow to support Android and iOS.
+
+# Store/repository versions
+We should be listed in as many stores and repositories as possible.  This would include WinGet, Windows Store, Google Store, Amazon Store, iTunes App Store, Ubuntu, Debian, OpenSUSE, Magiea, and more.
+
 # Note: Our name is only a placeholder
 As such, once we have a better name, expect our GitHub URL to change.  In the meantime, we're on Libera IRC at [#chatzilla-replacement-project](irc://irc.libera.chat/chatzilla-replacement-project) or [#chatzilla-replacement-project (SSL)](ircs://irc.libera.chat/chatzilla-replacement-project) , but that could change too.
