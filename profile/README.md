@@ -136,5 +136,11 @@ Eventually, we should grow to support Android and iOS.
 # Store/repository versions
 We should be listed in as many stores and repositories as possible.  This would include WinGet, Windows Store, Google Store, Amazon Store, iTunes App Store, Ubuntu, Debian, OpenSUSE, Magiea, and more.
 
+# Portable versus installed
+Many users like having portable applications.  So we should have a mode where settings and logs are stored in the application directory rather than the user's profile.  Regardless, we should never install the app into the user's profile unless the operating system has a location that's protected from malware that might try to infect our app.  Users going for the portable "installation" will have to take that risk.
+
+# Progressive Web Application
+One option is to do a PWA.  These run in the browser, but can be installed by some browsers so they appear to be local apps.  You can also generate an installer and provide what appears to be a normal executable.  We don't want to assume any specific browser, but if we provide one internally, problem solved.  Some of these systems expose what to the operating system appears to be an executable they know how to run.
+
 # Note: Our name is only a placeholder
 As such, once we have a better name, expect our GitHub URL to change.  In the meantime, we're on Libera IRC at [#chatzilla-replacement-project](irc://irc.libera.chat/chatzilla-replacement-project) or [#chatzilla-replacement-project (SSL)](ircs://irc.libera.chat/chatzilla-replacement-project) , but that could change too.
