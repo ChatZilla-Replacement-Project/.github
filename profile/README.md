@@ -62,7 +62,7 @@ That's way up in the air.  As noted, cZ was written with XUL and JavaScript.  XU
 
 cZ did have the ability to run without a browser with help from XulRunner, but that died a LONG time ago.  Mozilla lost interest in XR before they dropped XUL.  There's been no XR replacement.
 
-That leaves abandoning the browser entirely.  Since cZ could run that way, we aren't losing anything.  Instead, we might gain users who wouldn't use our choice of browser.
+That leaves abandoning the browser extension entirely.  Since cZ could run that way, we aren't losing anything.  Instead, we might gain users who wouldn't use our choice of browser.  However, we could run as a progressive web app.  For that option, see [Progressive Web Application](https://github.com/ChatZilla-Replacement-Project/.github/tree/main/profile#progressive-web-application).
 
 At least one potential developer on the project works mainly with C# and Windows Presentation Framework.  WPF and .NET do run outside Windows with help from [Wine](https://www.winehq.org/) and [Mono](https://www.winehq.org/), but we'd need to limit ourselves to slightly older versions of .NET and C#.  Java is an option as that developer does work with it and Swing.  But many others represent a learning curve.  Options include C#/GTK#, C#/QtSharp, C++/GTK, C++/Qt, C++/Wx, and more.
 
