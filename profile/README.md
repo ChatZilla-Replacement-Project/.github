@@ -114,7 +114,7 @@ Initially, the project would be for IRC only.  But it may have IRC support actua
 Some clients for Linux are strictly text based and can run even without a graphical user interface or GUI.  This is limited but some users like it.  If we did this, the commications portion of the product would be a seperate executable that might be an installation option.  Users could then choose to install just one interface or both.  The text interface, sometimes called a TUI, would prevent support of many non-IRC protocols.
 
 # Module Owners
-As the organization grows, we'll need to assign owners to those who are the main contacts for each module in the application.  These owners might be the primary coders for the module.  Examples:
+As the organization grows, we'll need to assign owners to those who are the main contacts for each module in the application.  Owners would handle any pull requests and might be the only one with that option.  These owners might be the primary coders for the module.  Examples:
 * The main GUI app
 * The TUI app (if implemented)
 * Support for each OS would need its own owner
